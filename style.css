@@ -1,0 +1,508 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+  background: #faf7f4;
+  color: #222;
+  line-height: 1.7;
+}
+body {
+  color: #1f1f1f;
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+  padding: 40px 25px;
+}
+h1, h2, h3 {
+  color: #111;
+}
+
+p {
+  color: #333;
+  line-height: 1.7;
+}
+
+.tagline {
+  color: #555;
+}
+
+.simple-section {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* ================= INDEX PAGE BACKGROUND ================= */
+.index-bg {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("https://i.pinimg.com/736x/09/12/b8/0912b83d41a134054302a5adde7c9416.jpg");
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* ================= BODY BACKGROUND ================= */
+body {
+  background: url("https://i.pinimg.com/736x/b9/81/6b/b9816bfde4a99a8b51429e822f95c98f.jpg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /*background: rgba(255,255,255,0.95);*/
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand h1 {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* ================= NAV ================= */
+.main-nav a {
+  margin-left: 22px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  position: relative;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #222;
+  transition: 0.3s;
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+  width: 100%;
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+/* ================= BUTTONS ================= */
+.hero-buttons {
+  margin-top: 35px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  margin: 8px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #222;
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #25D366;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+/* ================= SECTIONS ================= */
+.simple-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.simple-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.simple-section p {
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+/* ================= GALLERY ================= */
+.gallery {
+  padding: 90px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+/* FILTER BUTTONS */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filter-buttons button {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 10px 22px;
+  margin: 6px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* ART CARD */
+.art-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.art-card:hover {
+  transform: translateY(-6px);
+}
+
+.art-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  background: #f5f5f5;
+}
+
+.art-info {
+  padding: 18px;
+  text-align: center;
+}
+
+.art-info h3 {
+  font-size: 1.1rem;
+}
+
+.art-info p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* DISCLAIMER */
+.disclaimer {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  text-align: center;
+}
+
+/* ================= CONTACT ================= */
+/*.contact-section {
+  background: rgba(255,255,255,0.9);
+}*/
+
+.contact-details p {
+  margin: 14px 0;
+  font-size: 1rem;
+}
+
+.contact-details a {
+  color: #222;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* WHATSAPP BUTTON (FIXED VISIBILITY) */
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 14px 38px;
+  background: #25D366;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(37, 211, 102, 0.6);
+}
+
+/* ================= MODAL ================= */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+.site-footer {
+  text-align: center;
+  padding: 35px 20px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.social-links {
+  margin-top: 12px;
+}
+
+.social-links a {
+  margin: 0 12px;
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .art-card img {
+    height: 260px;
+  }
+}
+
+/* ================= ARTIST PHOTO (FIXED) ================= */
+.artist-photo {
+  width: 300px;
+  height: 380px;              /* Taller for portrait photo */
+  margin: 0 auto 30px;
+  border-radius: 22px;        /* Professional portrait frame */
+  overflow: hidden;
+  background: #000;
+  box-shadow:
+    0 0 0 6px rgba(255,255,255,0.95),
+    0 25px 60px rgba(0,0,0,0.35),
+    0 0 45px rgba(255,0,120,0.35);
+}
+
+.artist-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* No distortion */
+  object-position: top;     /* Keeps face visible */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .artist-photo {
+    width: 220px;
+    height: 300px;
+  }
+}
+
+
+/* ================= SOCIAL ICONS ================= */
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-links i {
+  font-size: 1.6rem;
+}
+
+/* Brand colors on hover */
+.social-links a:hover {
+  transform: translateY(-4px);
+}
+
+.social-links a:hover .fa-instagram {
+  color: #E1306C;
+}
+
+.social-links a:hover .fa-youtube {
+  color: #FF0000;
+}
+ /*portfolio*/
+.portfolio-section {
+  padding: 80px 20px 40px;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: 0.35em;
+  font-weight: 600;
+  color: #2b2b2b;
+  margin: 0 auto 40px;
+  line-height: 1.2;
+  visibility: visible;   /* IMPORTANT */
+}
+
+
+
+
+/* ================= ABOUT SECTION (SOFT LIGHT BACKGROUND) ================= */
+
+.about-section {
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(233, 226, 226, 0.75),
+      rgba(233, 224, 224, 0.75)
+    );
+  border-radius: 18px;
+  padding: 90px 25px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.about-title {
+  font-size: 2.3rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Quote */
+.about-quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: 35px;
+}
+
+/* Text */
+.about-text {
+  max-width: 760px;
+  margin: auto;
+}
+
+.about-text p {
+  margin-bottom: 22px;
+  line-height: 1.9;
+  font-size: 1.02rem;
+  color: #222;
+}
+
+/* Signature */
+.artist-signature {
+  margin-top: 40px;
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.6rem;
+  opacity: 0.75;
+}
