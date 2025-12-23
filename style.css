@@ -558,5 +558,31 @@ body {
     height: 180px;
     object-fit: cover;
   }
+} 
+
+/* ===== PORTFOLIO TITLE MOBILE FIX ===== */
+.portfolio-title {
+  text-align: center;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
+
+/* Mobile font adjustment */
+@media (max-width: 768px) {
+  .portfolio-title {
+    font-size: 42px;   /* reduce size */
+    letter-spacing: 6px;
+    line-height: 1.2;
+    padding: 0 10px;   /* prevent edge cut */
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-title {
+    font-size: 36px;
+    letter-spacing: 5px;
+  }
+}
+
 
