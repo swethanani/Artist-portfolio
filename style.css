@@ -507,6 +507,37 @@ body {
   opacity: 0.75;
 }
 
+
+/* ===================================================== */
+/* MOBILE NAV FIX – KEEP HOME GALLERY ABOUT CONTACT ONE LINE */
+/* ===================================================== */
+
+@media (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;     /* VERY IMPORTANT */
+    gap: 14px;
+    width: 100%;
+  }
+
+  .main-nav a {
+    margin-left: 0;       /* remove desktop spacing */
+    font-size: 14px;
+    white-space: nowrap;  /* prevent breaking */
+  }
+}
+
+
+/* ===================================================== */
 /* GALLERY FIX – ALWAYS 3 PAINTINGS IN ONE LINE */
 /* ===================================================== */
 
@@ -528,3 +559,4 @@ body {
     object-fit: cover;
   }
 }
+
